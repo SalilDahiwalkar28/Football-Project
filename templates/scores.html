@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League Scores</title>
+</head>
+<body>
+    <h1>Premier League Scores</h1>
+
+    <!-- Previous Scores Section -->
+    <h2>Scores</h2>
+    <ul>
+    {% for score in previous_scores %}
+        <li>{{ score }}</li>
+    {% endfor %}
+    </ul>
+
+    <!-- Upcoming Matches Section -->
+    <h2>Upcoming Matches</h2>
+    <ul>
+    {% for score in upcoming_matches %}
+        <li>{{ score }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
